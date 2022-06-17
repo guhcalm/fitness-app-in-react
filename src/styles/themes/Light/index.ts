@@ -3,9 +3,15 @@ import { ThemeInterface, ThemesEnum } from "../../../interfaces"
 export default {
   name: ThemesEnum.LIGHT,
   palette: {
+    surface: {
+      main: "rgb(209,209,213)",
+      on: "rgb(55,55,55)",
+      dark: "rgb(195,195,199)",
+      light: "white"
+    },
     background: {
-      main: "rgb(0, 55, 107)",
-      on: ""
+      main: "rgb(209,209,213)",
+      on: "rgb(55,55,55)"
     },
     primary: {
       main: "",

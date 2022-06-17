@@ -5,6 +5,10 @@ export default styled.div`
   ${({ palette }: { palette: ThemeInterface["palette"] }) => `
   --background: ${palette.background.main};
   --on-background: ${palette.background.on};
+  --surface: ${palette.surface.main};
+  --on-surface: ${palette.surface.on};
+  --surface-on-light: ${palette.surface.light};
+  --surface-on-dark: ${palette.surface.dark};
   --primary: ${palette.primary.main};
   --on-primary: ${palette.primary.on};
   --primary-on-light: ${palette.primary.light};

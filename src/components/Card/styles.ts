@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export default styled.div`
   background-color: white;
-  width: 200px;
-  height: 300px;
+  min-width: 200px;
+  height: 100%;
+  // 200 / 300
   border-radius: 15px;
   box-shadow: 1px 1px 5px black;
   position: relative;
@@ -52,7 +53,7 @@ export default styled.div`
       flex-direction: column;
       gap: 0.5px;
       font-family: "Poiret One", cursive;
-      font-size: 8px;
+      font-size: 7px;
       font-weight: 900;
       color: #ddd;
       text-transform: uppercase;

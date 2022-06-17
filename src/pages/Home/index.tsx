@@ -1,10 +1,10 @@
 import Container from "./styles"
-import { Return } from "../../components"
+import { HorizontalResults } from "../../components"
 
 export default () => {
   return (
     <Container data-home="">
-      <Return />
+      <HorizontalResults />
     </Container>
   )
 }

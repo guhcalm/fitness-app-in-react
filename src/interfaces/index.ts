@@ -14,7 +14,8 @@ export interface ColorInterface {
 export interface ThemeInterface {
   name: ThemesEnum
   palette: {
-    surface: ColorInterface
+    error?: ColorInterface
+    surface?: ColorInterface
     background: ColorInterface
     primary: ColorInterface
     secondary: ColorInterface
