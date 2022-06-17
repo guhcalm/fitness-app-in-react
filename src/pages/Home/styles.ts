@@ -7,10 +7,7 @@ export default styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: black;
-  background-image: radial-gradient(circle at 0 0, red, transparent),
-    radial-gradient(circle at 0% 100%, yellow, transparent),
-    radial-gradient(circle at 100% 50%, blue, transparent);
+  background-color: var(--background);
 `
 
 export const Button = styled.div`

@@ -22,7 +22,6 @@ export default createGlobalStyle`
     body,
     #root {
         width: 100vw;
-        height: 100vh;
         max-width: 100vw;
         display: flex;
         justify-content: center;

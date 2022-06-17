@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
 export default styled.div`
+  margin-top: 30px;
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 320px;
   overflow: hidden;
+  height: 550px;
 `
 
 export const Items = styled.div`

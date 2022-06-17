@@ -10,7 +10,7 @@ export default {
       light: "white"
     },
     background: {
-      main: "rgb(209,209,213)",
+      main: "rgb(195,195,199)",
       on: "rgb(55,55,55)"
     },
     primary: {
