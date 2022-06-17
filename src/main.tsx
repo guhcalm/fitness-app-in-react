@@ -4,7 +4,7 @@ import { StateProvider } from "./context"
 import { GlobalStyles } from "./styles"
 import MyApp from "./_app"
 
-myRoot(document.querySelector("#root") as HTMLDivElement).render(
+myRoot(root).render(
   <StateProvider>
     <Router>
       <GlobalStyles />

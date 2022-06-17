@@ -1,18 +1,10 @@
-import { useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { useCustomContext } from "../../hooks"
-import Container, { Button } from "./styles"
+import Container from "./styles"
+import { Return } from "../../components"
 
 export default () => {
-  const { id } = useParams()
-  const { dispatch, actions } = useCustomContext()
-  useEffect(() => {
-    dispatch(actions.setLightTheme())
-  }, [])
   return (
     <Container data-home="">
-      Home Page {id}
-      <Button />
+      <Return />
     </Container>
   )
 }

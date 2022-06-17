@@ -14,6 +14,7 @@ export interface ColorInterface {
 export interface ThemeInterface {
   name: ThemesEnum
   palette: {
+    surface: ColorInterface
     background: ColorInterface
     primary: ColorInterface
     secondary: ColorInterface
@@ -25,6 +26,10 @@ export interface StateInterface {
 }
 
 export enum ActionsEnum {
-  SET_LIGHT_THEME = "setLightTheme",
-  SET_DARK_THEME = "setDarkTheme"
+  SWITCH_THEME
 }
+
+export type ReducerType = (
+  state: StateInterface,
+  action: { type: string; payload: any }
+) => StateInterface

@@ -4,7 +4,7 @@ export default {
   name: ThemesEnum.LIGHT,
   palette: {
     background: {
-      main: "white",
+      main: "rgb(0, 55, 107)",
       on: ""
     },
     primary: {
