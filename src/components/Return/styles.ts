@@ -5,11 +5,7 @@ export default styled.div`
   width: 90px;
   height: 100px;
   border-radius: 0 100% 100% 0/ 0 50% 50% 0;
-  background-image: radial-gradient(
-    circle at 100% 50%,
-    black 60%,
-    transparent 80%
-  );
+  background-image: radial-gradient(circle at 100% 50%, black 60%, transparent 80%);
   display: flex;
   justify-content: center;
   align-items: center;

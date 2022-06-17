@@ -1,23 +1,22 @@
-import * as interfaces from "../../interfaces"
+import { ReducerType as RT, ActionsEnum, ThemesEnum, StateInterface } from "../../interfaces"
 import { ThemesStyles } from "../../styles"
 
-const { SWITCH_THEME } = interfaces.ActionsEnum
-const { LIGHT, DARK } = interfaces.ThemesEnum
+const { SWITCH_THEME } = ActionsEnum
+const { LIGHT, DARK } = ThemesEnum
 const { Light, Dark } = ThemesStyles
 
-export const initialState = { theme: Light } as interfaces.StateInterface
+export const initialState = { theme: Light } as StateInterface
 
 const actions = {
   dispatchers: {
     switchTheme: () => ({ type: SWITCH_THEME })
   },
-  reducers: {
-    [SWITCH_THEME]: state => {
-      const theme = state.theme.name === LIGHT ? Light : Dark
-      metaThemeColor.content = theme.palette.background.main
-      return { ...state, theme }
+  reducers: ((state, action) => ({
+    [SWITCH_THEME]: () => {
+      return { ...state, theme: state.theme.name === LIGHT ? Light : Dark }
     }
-  }
+  })) as RT
 }
-export const { dispatchers } = actions
-export default (state, action) => actions.reducers[action.type](state, action)
+
+export const { dispatchers, reducers } = actions
+export default ((state, action) => reducers(state, action)[action.type]()) as RT

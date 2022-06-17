@@ -31,5 +31,5 @@ export enum ActionsEnum {
 
 export type ReducerType = (
   state: StateInterface,
-  action: { type: string; payload: any }
-) => StateInterface
+  action?: { type: string; payload: any }
+) => unknown
