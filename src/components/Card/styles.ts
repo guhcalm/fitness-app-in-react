@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export default styled.div`
   background-color: white;
-  min-width: 200px;
-  height: 100%;
+  --height: 500;
+  min-width: calc(var(--height) * 0.66) px;
+  height: var(--height) px;
   // 200 / 300
   border-radius: 15px;
   box-shadow: 1px 1px 5px black;

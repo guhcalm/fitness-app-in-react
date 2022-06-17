@@ -4,7 +4,7 @@ export default styled.div`
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 320px;
+  min-height: 320px;
   overflow: hidden;
 `
 

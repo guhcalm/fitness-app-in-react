@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default styled.div`
   position: relative;
   height: 150px;
-  width: 900px;
+  width: 100%;
   background-color: var(--surface);
   box-shadow: 0 2px 5px black;
   display: flex;

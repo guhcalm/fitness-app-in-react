@@ -14,13 +14,13 @@ export default (
     const onMouseMove = ({ x, y }) => setMousePos(current => ({ x, y }))
     const onMouseDown = () => setMousePress(() => true)
     const onMouseUp = () => setMousePress(() => false)
-    window.addEventListener("mousemove", onMouseMove)
-    window.addEventListener("mousedown", onMouseDown)
-    window.addEventListener("mouseup", onMouseUp)
+    window.addEventListener("pointermove", onMouseMove)
+    window.addEventListener("pointerdown", onMouseDown)
+    window.addEventListener("pointerup", onMouseUp)
     return () => {
-      window.removeEventListener("mousemove", onMouseMove)
-      window.removeEventListener("mousedown", onMouseDown)
-      window.removeEventListener("mouseup", onMouseUp)
+      window.removeEventListener("pointermove", onMouseMove)
+      window.removeEventListener("pointerdown", onMouseDown)
+      window.removeEventListener("pointerup", onMouseUp)
     }
   }, [])
 
@@ -34,10 +34,11 @@ export default (
   }, [mousePos])
 
   useEffect(() => {
-    const onMouseMove = ({ movementX }) => setStretch(() => (mousePress ? movementX * 1.5 : 0))
-    window.addEventListener("mousemove", onMouseMove)
+    const onMouseMove = ({ movementX }) =>
+      setStretch(() => (mousePress && hover ? movementX * 1.5 : 0))
+    window.addEventListener("pointermove", onMouseMove)
     return () => {
-      window.removeEventListener("mousemove", onMouseMove)
+      window.removeEventListener("pointermove", onMouseMove)
     }
   }, [mousePress])
 

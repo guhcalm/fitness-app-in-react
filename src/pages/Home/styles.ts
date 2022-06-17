@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
 export default styled.div`
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   background-color: black;
   background-image: radial-gradient(circle at 0 0, red, transparent),
     radial-gradient(circle at 0% 100%, yellow, transparent),
