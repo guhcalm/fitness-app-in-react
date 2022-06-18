@@ -5,8 +5,8 @@ import { Home, Exercise } from "./pages"
 const MyApp = () => (
   <App>
     <Routes>
-      <Route path="/:id" element={<Home />} />
-      <Route path="/" element={<Exercise />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/exercise/:id" element={<Exercise />} />
       <Route path="*" element={<Home />} />
     </Routes>
   </App>

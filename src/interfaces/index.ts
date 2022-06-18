@@ -24,6 +24,7 @@ export interface ThemeInterface {
 // STATE
 export interface StateInterface {
   theme: ThemeInterface
+  exercises: any
 }
 
 export enum ActionsEnum {

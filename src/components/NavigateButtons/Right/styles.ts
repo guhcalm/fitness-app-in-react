@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export default styled.div`
+  cursor: pointer;
   width: 80px;
   height: 110px;
   overflow: hidden;

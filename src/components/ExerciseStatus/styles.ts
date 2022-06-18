@@ -15,7 +15,11 @@ export default styled.div`
     flex-direction: column;
     gap: 10px;
     & > div {
-      border: 1px solid rgba(0, 0, 0, 0.5);
+      background-color: var(--surface);
+      background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0.1), transparent),
+        radial-gradient(circle at 0% 100%, rgba(255, 255, 0, 0.1), transparent),
+        radial-gradient(circle at 100% 50%, rgba(0, 0, 255, 0.1), transparent);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
       width: 70px;
       height: 70px;
       border-radius: 35px;
@@ -34,8 +38,9 @@ export default styled.div`
         text-transform: capitalize;
         font-family: Poiret One;
         font-weight: 900;
-        font-size: 11px;
+        font-size: 10px;
         color: var(--on-surface);
+        opacity: 0.8;
       }
     }
   }

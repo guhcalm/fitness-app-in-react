@@ -10,6 +10,7 @@ export default styled.div`
   position: relative;
   overflow: hidden;
   user-select: none;
+  cursor: pointer;
 
   & > span {
     font-family: "Poiret One", cursive;

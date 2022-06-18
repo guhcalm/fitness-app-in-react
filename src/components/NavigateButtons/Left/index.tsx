@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom"
 import Container from "./styles"
 
-export default () => (
-  <Container>
-    <span />
-  </Container>
-)
+export default () => {
+  const navigate = useNavigate()
+  return (
+    <Container onClick={() => navigate(`/`)}>
+      <span />
+    </Container>
+  )
+}

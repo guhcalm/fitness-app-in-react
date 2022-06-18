@@ -1,3 +1,4 @@
+import exercises from "../../response"
 import { ReducerType as RT, ActionsEnum, ThemesEnum, StateInterface } from "../../interfaces"
 import { ThemesStyles } from "../../styles"
 
@@ -5,7 +6,7 @@ const { SWITCH_THEME } = ActionsEnum
 const { LIGHT, DARK } = ThemesEnum
 const { Light, Dark } = ThemesStyles
 
-export const initialState = { theme: Light } as StateInterface
+export const initialState = { theme: Dark, exercises } as StateInterface
 
 const actions = {
   dispatchers: {

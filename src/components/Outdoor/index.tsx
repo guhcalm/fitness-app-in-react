@@ -1,16 +1,12 @@
 import { NavigateButtons, ExerciseStatus } from ".."
-import Container, { Exercise, Gradient } from "./styles"
+import Container, { Exercise, GradientCircle, Gradient } from "./styles"
 
-export default () => (
+export default ({ item }) => (
   <Container>
-    <Exercise
-      src="http://d205bpvrqc9yn1.cloudfront.net/0006.gif"
-      name="exercise"
-      loading="lazy"
-      draggable="false"
-    />
+    <Exercise src={item.gifUrl} name="exercise" loading="lazy" draggable="false" />
+    <GradientCircle />
     <Gradient />
     <NavigateButtons.Left />
-    <ExerciseStatus />
+    <ExerciseStatus item={item} />
   </Container>
 )
