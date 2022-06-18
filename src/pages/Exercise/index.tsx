@@ -1,5 +1,10 @@
 import Container from "./styles"
+import { Outdoor } from "../../components"
 
 export default () => {
-  return <Container>{}</Container>
+  return (
+    <Container data-exercise="">
+      <Outdoor />
+    </Container>
+  )
 }
