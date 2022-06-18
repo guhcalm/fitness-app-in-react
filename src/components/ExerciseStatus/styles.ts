@@ -38,7 +38,7 @@ export default styled.div`
         font-family: Poiret One;
         font-weight: 900;
         font-size: 10px;
-        color: var(--on-surface);
+        color: black;
         opacity: 0.8;
       }
     }
