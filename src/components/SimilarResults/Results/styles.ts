@@ -14,7 +14,7 @@ export default styled.div`
   }
   ::-webkit-scrollbar-thumb:horizontal {
     border-radius: 100vmax;
-    background-color: var(--surface);
+    background-color: rgba(0, 0, 15, 0.3);
     cursor: pointer;
   }
 `

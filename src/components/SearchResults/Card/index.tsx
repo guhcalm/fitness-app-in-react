@@ -21,7 +21,12 @@ export default ({ item }) => {
     <Container data-card="" className={className()}>
       <Exercise src={gifUrl} alt={name} loading="lazy" draggable="false" />
       <Icon src={icons.bodyPart[bodyPart]} alt="" loading="lazy" draggable="false" />
-      <span onClick={() => navigate(`/exercise/${id}`)}>{`- ${name} -`}</span>
+      <span
+        onClick={() => {
+          navigate(`/exercise/${id}`)
+          window.scrollTo(0, 0)
+        }}
+      >{`- ${name} -`}</span>
       <div>
         <span>{target}</span>
         <span>{bodyPart}</span>

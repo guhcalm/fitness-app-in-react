@@ -19,10 +19,12 @@ export default styled.div`
 
     & > span {
       display: flex;
-      background-image: linear-gradient(transparent, var(--surface-on-light));
       height: 30px;
       width: 30px;
       border-radius: 15px;
+      background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0.15), transparent),
+        radial-gradient(circle at 0% 100%, rgba(255, 255, 0, 0.15), transparent),
+        radial-gradient(circle at 100% 50%, rgba(0, 0, 255, 0.15), transparent);
     }
     & > div {
       display: flex;
