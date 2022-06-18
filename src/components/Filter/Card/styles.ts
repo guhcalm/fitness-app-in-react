@@ -19,7 +19,6 @@ export default styled.div`
     left: 50%;
     bottom: 18px;
     transform: translateX(-50%);
-    text-shadow: 0px 0px 20px white;
     cursor: pointer;
     text-transform: capitalize;
   }

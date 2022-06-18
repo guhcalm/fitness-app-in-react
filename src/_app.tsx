@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom"
 import { App } from "./containers"
-import { Home } from "./pages"
+import { Home, Exercise } from "./pages"
 
 const MyApp = () => (
   <App>
     <Routes>
       <Route path="/:id" element={<Home />} />
+      <Route path="/" element={<Exercise />} />
       <Route path="*" element={<Home />} />
     </Routes>
   </App>
