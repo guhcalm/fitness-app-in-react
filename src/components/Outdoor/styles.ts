@@ -22,9 +22,9 @@ export const GradientCircle = styled.div`
 
   background-color: var(--background);
   opacity: 0.3;
-  background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0.5), transparent),
-    radial-gradient(circle at 0% 100%, rgba(255, 255, 0, 0.5), transparent),
-    radial-gradient(circle at 100% 50%, rgba(0, 0, 255, 0.5), transparent);
+  background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0.2), transparent),
+    radial-gradient(circle at 0% 100%, rgba(255, 255, 0, 0.2), transparent),
+    radial-gradient(circle at 100% 50%, rgba(0, 0, 255, 0.2), transparent);
   width: 100%;
   height: 100%;
 `
