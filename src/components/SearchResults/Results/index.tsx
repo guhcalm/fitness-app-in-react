@@ -8,8 +8,8 @@ export default () => {
   } = useCustomContext()
   return (
     <Container>
-      {exercises.map((item, id) => (
-        <Card item={item} key={id} />
+      {exercises.slice(0, 12).map(item => (
+        <Card item={item} key={item.id} />
       ))}
     </Container>
   )

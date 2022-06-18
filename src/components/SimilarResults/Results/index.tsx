@@ -14,7 +14,7 @@ export default () => {
   return (
     <Container ref={containerRef}>
       <Items ref={itemsRef} style={{ left }}>
-        {exercises.map(item => (
+        {exercises.slice(0, 12).map(item => (
           <Card item={item} key={item.id} />
         ))}
       </Items>

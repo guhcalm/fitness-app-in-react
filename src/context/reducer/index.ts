@@ -1,4 +1,4 @@
-import exercises from "../../response"
+import { exercises } from "../../response"
 import { ReducerType as RT, ActionsEnum, ThemesEnum, StateInterface } from "../../interfaces"
 import { ThemesStyles } from "../../styles"
 
@@ -14,7 +14,7 @@ const actions = {
   },
   reducers: ((state, action) => ({
     [SWITCH_THEME]: () => {
-      return { ...state, theme: state.theme.name === LIGHT ? Light : Dark }
+      return { ...state, theme: state.theme.name === LIGHT ? Dark : Light }
     }
   })) as RT
 }

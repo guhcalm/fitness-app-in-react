@@ -39,3 +39,9 @@ export const Gradient = styled.div`
   border-radius: 30px 30px 0 0;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 `
+
+export const Utils = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
