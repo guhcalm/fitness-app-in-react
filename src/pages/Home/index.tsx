@@ -1,12 +1,12 @@
 import Container from "./styles"
-import { Header, SearchResults, Filter, PagesManager } from "../../components"
+import { Header, SearchResults, Filters, PagesManager } from "../../components"
 
 export default () => {
   return (
     <Container data-home="">
       <Header />
-      <Filter.Results />
-      <SearchResults.Results />
+      <Filters />
+      <SearchResults />
       <PagesManager />
     </Container>
   )
