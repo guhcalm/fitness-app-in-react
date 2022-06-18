@@ -8,6 +8,9 @@ export default styled.div`
   align-items: center;
   flex-direction: column;
   background-color: var(--background);
+  background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0.05), transparent),
+    radial-gradient(circle at 0% 100%, rgba(255, 255, 0, 0.05), transparent),
+    radial-gradient(circle at 100% 50%, rgba(0, 0, 255, 0.05), transparent);
 `
 
 export const Button = styled.div`

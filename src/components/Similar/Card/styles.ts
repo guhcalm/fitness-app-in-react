@@ -2,22 +2,14 @@ import styled from "styled-components"
 
 export default styled.div`
   background-color: white;
-  min-width: 330px;
-  height: 500px;
+  min-width: 200px;
+  height: 300px;
   // 200 / 300
   border-radius: 15px;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
   user-select: none;
-
-  & > img {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
   & > span {
     font-family: "Poiret One", cursive;
@@ -25,10 +17,11 @@ export default styled.div`
     font-size: 10px;
     position: absolute;
     left: 50%;
-    bottom: 16px;
+    bottom: 18px;
     transform: translateX(-50%);
     text-shadow: 0px 0px 20px white;
     cursor: pointer;
+    text-transform: capitalize;
   }
 
   & > div {
@@ -38,7 +31,7 @@ export default styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--surface-on-dark);
     display: flex;
     justify-content: center;
     gap: 1px;
@@ -46,25 +39,50 @@ export default styled.div`
     & > span {
       flex-grow: 1;
       height: 100%;
-      background-color: rgb(20, 20, 20);
+      background-color: var(--surface);
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       gap: 0.5px;
       font-family: "Poiret One", cursive;
-      font-size: 7px;
+      font-size: 8px;
       font-weight: 900;
-      color: #ddd;
+      color: var(--on-surface);
       text-transform: uppercase;
     }
   }
   &:hover {
     & > span {
-      top: 15px;
+      top: 23px;
     }
     & > div {
       visibility: visible;
     }
   }
+`
+
+export const Exercise = styled.img`
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`
+
+export const Icon = styled.img`
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0.5;
+`
+
+export const IconBottom = styled.img`
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.5;
+  transform: rotate(180deg);
 `

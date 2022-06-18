@@ -13,9 +13,9 @@ export default styled.div`
     padding: 0 10px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 25px 25px 0 0 / 25px 25px 0 0;
+    border-radius: 25px;
     background-color: var(--surface);
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 
     & > span {
       display: flex;
