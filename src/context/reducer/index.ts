@@ -6,7 +6,7 @@ const { SWITCH_THEME } = ActionsEnum
 const { LIGHT, DARK } = ThemesEnum
 const { Light, Dark } = ThemesStyles
 
-export const initialState = { theme: Dark, exercises } as StateInterface
+export const initialState = { theme: Light, exercises } as StateInterface
 
 const actions = {
   dispatchers: {

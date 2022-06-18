@@ -5,8 +5,8 @@ export default styled.div`
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
-  height: 310px;
+  overflow-x: scroll;
+  height: 330px;
 `
 
 export const Items = styled.div`
