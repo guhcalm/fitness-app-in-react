@@ -7,6 +7,20 @@ export default styled.div`
   overflow: hidden;
   position: relative;
   transform: scaleX(-100%);
+
+  & > div {
+    position: absolute;
+    right: calc(50% + 3px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 10px;
+    opacity: 0.6;
+    & > img {
+      height: 100%;
+    }
+  }
+
   & > span {
     overflow: hidden;
     position: relative;
@@ -22,7 +36,7 @@ export default styled.div`
       background-image: radial-gradient(
         circle at 100% 0%,
         var(--surface-on-light),
-        transparent 55%
+        var(--surface) 55%
       );
       border-radius: 30px;
       position: absolute;

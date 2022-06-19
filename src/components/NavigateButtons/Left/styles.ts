@@ -6,6 +6,17 @@ export default styled.div`
   height: 110px;
   overflow: hidden;
   position: relative;
+  & > div {
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 10px;
+    background-color: var(--on-surface);
+    clip-path: polygon(100% 0, 4px 50%, 100% 100%, 0 50%);
+    opacity: 0.8;
+  }
   & > span {
     overflow: hidden;
     position: relative;
@@ -21,7 +32,7 @@ export default styled.div`
       background-image: radial-gradient(
         circle at 100% 0%,
         var(--surface-on-light),
-        transparent 55%
+        var(--surface) 55%
       );
       border-radius: 30px;
       position: absolute;

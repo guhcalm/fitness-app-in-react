@@ -6,6 +6,7 @@ export default () => {
   return (
     <Container onClick={() => navigate(`/`)}>
       <span />
+      <div />
     </Container>
   )
 }
