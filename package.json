@@ -1,5 +1,5 @@
 {
-  "name": "@guhcalm/minimal-boilerplate",
+  "name": "@guhcalm/fitness-app",
   "version": "1.0.0",
   "main": "src/index.tsx",
   "author": "guhcalm <guhcalm@outlook.com>",
