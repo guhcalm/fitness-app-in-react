@@ -5,7 +5,6 @@ export default () => {
   const { state, dispatch, actions } = useCustomContext()
   const { page, itemsPerPage, searchedList } = state.response
   const amount = searchedList.length
-  const amoutsPages = Math.trunc(amount / page)
 
   const onClickBefore = () => {
     if (page <= 0) return
@@ -13,6 +12,7 @@ export default () => {
     window.scrollTo(0, 0)
   }
   const onClickAfter = () => {
+    const amoutsPages = Math.trunc(amount / page)
     if (page >= amoutsPages) return
     dispatch(actions.setPage(page + 1))
     window.scrollTo(0, 0)

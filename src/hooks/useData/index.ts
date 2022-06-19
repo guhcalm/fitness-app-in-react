@@ -28,15 +28,16 @@ export default () => {
       const { search } = state.response
       const { filteredList } = state.response
       if (!search) return dispatch(actions.setSearchedList(filteredList))
+      const lowercase = search.toLowerCase()
       dispatch(
         actions.setSearchedList(
           filteredList.filter(
             ({ bodyPart, name, equipment, gifUrl, target }) =>
-              bodyPart.includes(search) ||
-              name.includes(search) ||
-              equipment.includes(search) ||
-              gifUrl.includes(search) ||
-              target.includes(search)
+              bodyPart.includes(lowercase) ||
+              name.includes(lowercase) ||
+              equipment.includes(lowercase) ||
+              gifUrl.includes(lowercase) ||
+              target.includes(lowercase)
           )
         )
       )
