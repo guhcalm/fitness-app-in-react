@@ -1,4 +1,4 @@
-import { NavigateButtons, ExerciseStatus } from ".."
+import { ExerciseStatus, ReturnButton, SwitchThemeButton } from "../../components"
 import Container, { Utils, Exercise, GradientCircle, Gradient } from "./styles"
 
 export default ({ item }) => (
@@ -7,8 +7,8 @@ export default ({ item }) => (
     <GradientCircle />
     <Gradient />
     <Utils>
-      <NavigateButtons.Left />
-      <NavigateButtons.Right />
+      <ReturnButton />
+      <SwitchThemeButton />
     </Utils>
     <ExerciseStatus item={item} />
   </Container>

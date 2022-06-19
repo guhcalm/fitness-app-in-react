@@ -1,5 +1,6 @@
 import Container from "./styles"
-import { Header, SearchResults, Filters, PagesManager } from "../../components"
+import { PagesManager } from "../../components"
+import { Filters, Header, SearchResults } from "../../containers"
 
 export default () => {
   return (

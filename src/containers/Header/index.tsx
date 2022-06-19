@@ -1,10 +1,10 @@
-import { NavigateButtons, Filters } from ".."
+import { ReturnButton, SwitchThemeButton } from "../../components"
 import Container from "./styles"
 
 export default () => (
   <Container>
-    <NavigateButtons.Left />
+    <ReturnButton />
     <input placeholder="Explore" />
-    <NavigateButtons.Right />
+    <SwitchThemeButton />
   </Container>
 )

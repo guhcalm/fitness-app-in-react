@@ -1,4 +1,4 @@
-import { useCustomContext } from "../../../hooks"
+import { useCustomContext } from "../../hooks"
 import Container, { Circle } from "./styles"
 
 export default ({ item }) => {

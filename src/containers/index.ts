@@ -1,1 +1,6 @@
 export { default as App } from "./App"
+export { default as Header } from "./Header"
+export { default as Filters } from "./Filters"
+export { default as SearchResults } from "./SearchResults"
+export { default as Outdoor } from "./Outdoor"
+export { default as SimilarResults } from "./SimilarResults"
