@@ -25,6 +25,23 @@ export default styled.div`
       background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0.15), transparent),
         radial-gradient(circle at 0% 100%, rgba(255, 255, 0, 0.15), transparent),
         radial-gradient(circle at 100% 50%, rgba(0, 0, 255, 0.15), transparent);
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        width: 6px;
+        height: 12px;
+        background-color: var(--on-surface);
+        display: block;
+        content: "";
+        clip-path: polygon(100% 0, 3px 50%, 100% 100%, 0 50%);
+      }
+      &.right {
+        &::after {
+          transform: scaleX(-100%);
+        }
+      }
     }
     & > div {
       display: flex;

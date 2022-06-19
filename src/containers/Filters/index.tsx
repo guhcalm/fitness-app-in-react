@@ -1,24 +1,12 @@
 import { FilterCard, HorizontalScroll } from "../../components"
-
-const bodyPart = [
-  "all",
-  "back",
-  "cardio",
-  "chest",
-  "lower arms",
-  "lower legs",
-  "neck",
-  "shoulders",
-  "upper arms",
-  "upper legs",
-  "waist"
-]
+import { useCustomContext } from "../../hooks"
 
 export default () => {
+  const { state } = useCustomContext()
   return (
     <HorizontalScroll>
-      {bodyPart.map(item => (
-        <FilterCard item={item} key={item} />
+      {state.response.bodyPartsList.map(item => (
+        <FilterCard item={item} key={item} name={item} />
       ))}
     </HorizontalScroll>
   )

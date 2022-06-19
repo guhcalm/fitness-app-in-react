@@ -4,9 +4,12 @@ import MansoryLayout from "../../components/MansoryLayout"
 
 export default () => {
   const { state } = useCustomContext()
+  const { page, itemsPerPage } = state.response
+  const first = page * itemsPerPage
+  const last = first + itemsPerPage
   return (
     <MansoryLayout>
-      {state.exercises.slice(0, 12).map(item => (
+      {state.response.searchedList.slice(first, last).map(item => (
         <MansoryCard item={item} key={item.id} />
       ))}
     </MansoryLayout>

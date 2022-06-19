@@ -10,7 +10,7 @@ import { ThemesEnum } from "../../interfaces"
 const { LIGHT } = ThemesEnum
 
 export default () => {
-  const { state } = useCustomContext()
+  const { state, dispatch, actions } = useCustomContext()
   const { name } = state.theme
   const [term, setTerm] = useState("")
   const [focus, setFocus] = useState(false)
@@ -18,7 +18,7 @@ export default () => {
   const onRemove = () => setTerm("")
   const onSearch = e => {
     e.preventDefault()
-    term && console.log(term)
+    dispatch(actions.setSearch(term))
   }
   const onFocus = () => setFocus(true)
   return (

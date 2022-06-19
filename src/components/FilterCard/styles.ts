@@ -33,7 +33,8 @@ export default styled.li`
   }
 
   &.activate,
-  &:hover {
+  &:hover,
+  &.activate {
     & > img {
       opacity: 1;
     }
@@ -41,8 +42,8 @@ export default styled.li`
 `
 
 export const Circle = styled.div`
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 100%;
   border: 3px solid black;
   position: absolute;
@@ -50,4 +51,8 @@ export const Circle = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.5;
+
+  &.activate {
+    opacity: 1;
+  }
 `
