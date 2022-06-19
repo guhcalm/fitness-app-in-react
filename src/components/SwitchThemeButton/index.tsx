@@ -10,7 +10,11 @@ export default () => {
     <Container onClick={() => dispatch(actions.switchTheme())}>
       <span />
       <div>
-        <img src={state.theme.name === ThemesEnum.LIGHT ? sun : moon} alt="" />
+        <img
+          src={state.theme.name === ThemesEnum.LIGHT ? sun : moon}
+          alt="Switch Theme"
+          draggable="false"
+        />
       </div>
     </Container>
   )

@@ -16,6 +16,7 @@ export default styled.div`
     height: 20px;
     width: 10px;
     opacity: 0.6;
+    user-select: none;
     & > img {
       height: 100%;
     }
