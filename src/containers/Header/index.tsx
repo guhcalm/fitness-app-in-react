@@ -1,10 +1,10 @@
-import { ReturnButton, SwitchThemeButton } from "../../components"
+import { ReturnButton, SwitchThemeButton, SearchBar } from "../../components"
 import Container from "./styles"
 
 export default () => (
   <Container>
     <ReturnButton />
-    <input placeholder="Explore" />
+    <SearchBar />
     <SwitchThemeButton />
   </Container>
 )
