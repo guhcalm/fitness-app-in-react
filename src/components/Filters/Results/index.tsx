@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { Card } from ".."
-import useHorizontalResults from "./useHorizontalResults"
 import Container, { Items } from "./styles"
+import { useHorizontalMove } from "../../../hooks"
 
 const bodyPart = [
   "all",
@@ -20,7 +20,7 @@ const bodyPart = [
 export default () => {
   const containerRef = useRef()
   const itemsRef = useRef()
-  const { left } = useHorizontalResults(containerRef, itemsRef)
+  const { left } = useHorizontalMove(containerRef, itemsRef)
   return (
     <Container ref={containerRef}>
       <Items ref={itemsRef} style={{ left }} data-filters="">

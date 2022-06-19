@@ -1,8 +1,7 @@
 import { useRef } from "react"
 import { Card } from ".."
-import useHorizontalResults from "./useHorizontalResults"
 import Container, { Items } from "./styles"
-import { useCustomContext } from "../../../hooks"
+import { useCustomContext, useHorizontalMove } from "../../../hooks"
 
 export default () => {
   const {
@@ -10,7 +9,7 @@ export default () => {
   } = useCustomContext()
   const containerRef = useRef()
   const itemsRef = useRef()
-  const { left } = useHorizontalResults(containerRef, itemsRef)
+  const { left } = useHorizontalMove(containerRef, itemsRef)
   return (
     <Container ref={containerRef}>
       <Items ref={itemsRef} style={{ left }}>
