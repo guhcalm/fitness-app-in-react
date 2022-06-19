@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
 export default styled.form`
-  flex-grow: 0.5;
+  flex: 0.3;
   height: 30px;
   border-radius: 20px;
   background-color: var(--surface);
+  min-width: 135px;
   max-width: 250px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -20,6 +21,7 @@ export default styled.form`
   & > input {
     text-align: center;
     flex: 1;
+    width: 100%;
     background-color: transparent;
     outline: none;
     color: var(--on-surface);
