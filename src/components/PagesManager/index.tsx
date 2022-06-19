@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react"
 import { useCustomContext } from "../../hooks"
 import Container from "./styles"
 
 export default () => {
   const { state, dispatch, actions } = useCustomContext()
   const { page, itemsPerPage, searchedList } = state.response
-  const [before, setBefore] = useState("visible")
-  const [after, setAfter] = useState("visible")
   const amount = searchedList.length
   const amoutsPages = Math.trunc(amount / page)
 
@@ -27,7 +24,7 @@ export default () => {
       <div>
         <span onClick={onClickBefore} />
         <div>{page}</div>
-        <span className="right" onClick={onClickAfter} />
+        <span role="button" className="right" onClick={onClickAfter} />
       </div>
     </Container>
   )

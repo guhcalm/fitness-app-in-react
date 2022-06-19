@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.tsx",
   "author": "guhcalm <guhcalm@outlook.com>",
-  "description": "My Minimal Boilerplate to React-Redux-Styled-Components-Typescript-Webpack",
+  "description": "Exercises Searcher",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
