@@ -1,5 +1,5 @@
 {
-  "name": "@guhcalm/fitness-app",
+  "name": "@guhcalm/fitness-app-in-react",
   "version": "1.0.0",
   "main": "src/index.tsx",
   "author": "guhcalm <guhcalm@outlook.com>",
@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix \"src/**/*\""
   },
   "repository": {
-    "url": "https://github.com/guhcalm/minimal-boilerplate.git"
+    "url": "https://github.com/guhcalm/fitness-app-in-react.git"
   },
   "dependencies": {
     "react": "^18.1.0",
