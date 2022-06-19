@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export default styled.div`
+export default styled.ul`
   margin-top: 30px;
   user-select: none;
   padding: 10px;

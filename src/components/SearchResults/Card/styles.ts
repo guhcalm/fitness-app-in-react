@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export default styled.div`
+export default styled.li`
   background-color: white;
   max-width: 340px;
   border-radius: 15px;

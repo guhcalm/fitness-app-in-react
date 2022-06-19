@@ -18,6 +18,6 @@ export default styled.div`
     background-color: var(--surface);
     text-align: center;
     max-width: 250px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   }
 `

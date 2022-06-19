@@ -1,10 +1,9 @@
 import styled from "styled-components"
 
-export default styled.div`
+export default styled.li`
   background-color: var(--surface);
   min-width: 200px;
   height: 300px;
-  // 200 / 300
   border-radius: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   position: relative;

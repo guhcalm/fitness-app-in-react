@@ -9,7 +9,7 @@ export default styled.div`
   height: 330px;
 `
 
-export const Items = styled.div`
+export const Items = styled.ul`
   user-select: none;
   padding: 10px;
   gap: 10px;

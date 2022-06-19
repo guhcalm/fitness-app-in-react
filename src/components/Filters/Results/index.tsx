@@ -23,7 +23,7 @@ export default () => {
   const { left } = useHorizontalResults(containerRef, itemsRef)
   return (
     <Container ref={containerRef}>
-      <Items ref={itemsRef} style={{ left }}>
+      <Items ref={itemsRef} style={{ left }} data-filters="">
         {bodyPart.map(item => (
           <Card item={item} key={item} />
         ))}
