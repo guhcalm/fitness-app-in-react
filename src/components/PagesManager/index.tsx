@@ -23,7 +23,7 @@ export default () => {
     <Container style={{ visibility }}>
       <div>
         <span onClick={onClickBefore} />
-        <div>{page}</div>
+        <div>{page + 1}</div>
         <span role="button" className="right" onClick={onClickAfter} />
       </div>
     </Container>

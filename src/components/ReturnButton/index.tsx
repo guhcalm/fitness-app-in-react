@@ -6,6 +6,7 @@ export default () => {
   const { actions, dispatch } = useCustomContext()
   const navigate = useNavigate()
   const onClick = () => {
+    dispatch(actions.setFilter("all"))
     dispatch(actions.setSearch(""))
     navigate(`/`)
   }
