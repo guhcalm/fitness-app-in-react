@@ -6,7 +6,7 @@ export default styled.div`
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
   height: 330px;
 
   ::-webkit-scrollbar {
